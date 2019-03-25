@@ -2,7 +2,6 @@
 layout: posts
 title: "Hello, World!"
 date: 2019-03-19
-tags: first
 ---
 
 My first blog post! I've been 'blogging' for personal record-keeping for a while now, but this will be my first public-facing blog.

@@ -1,0 +1,32 @@
+---
+layout: posts
+title: "Background"
+date: 2019-03-22
+---
+
+Artificial Intelligence (AI) had its seminal event in the 1956 at the Dartmouth Summer Research Project on AI.
+John McCarthy, Marvin Minsky, and others came together to brainstorm on how to create machines and programs that would emulate intelligence.
+Symbolic AI was born at this workshop, as well as early Rule-Based Expert Systems.
+
+There was intense optimism following this workshop. Programs such as the [General Problem Solver](https://en.wikipedia.org/wiki/General_Problem_Solver)
+captured the imagination and made prominent researchers make claims such as "In from three to eight years we will have a machine with the general intelligence of an average human being."
+
+In the 1970s, after problems in AI proved to be much more difficult than anticipated, the Science Research Council asked
+the mathematician James Lighthill to write a report on the state of the research in AI. The 'Lighthill Report', as it came to be known, was highly
+critical of AI, and led to the US and British governments defunding the projects they had supported, leading to an 'AI Winter.'
+
+Marvin Minsky and Seymour Papert's book <em>Perceptrons</em> also came out in this time period, showing that a seemingly promising area of research,
+Frank Rosenblatt's early form of a neural network, had more limitations than was previously thought.
+This led to ten-year gap in 'connectionism' (artificial neural network) research.
+
+The AI Winter began to end in the 1980s with the rise of expert systems. AI was finally commercially viable, and was used by the Digital Equipment
+Corporation to save $40m per year. Connectionism also began to rebound with Geoffrey Hinton's popularizing the backpropagation method for neural
+networks.
+
+The second AI Winter came about as expert systems began to show their weak points. They were hard to update and maintain, and were vastly overhyped.
+Again, AI underdelivered relative to its promises, and a withdrawal of funds followed.
+
+In the current paradigm, artificial neural networks (ANNs), generative adversarial networks (GANs), and reinforcement learning (RL) have all benefitted from 'big data.'
+Rich Sutton recently put out '[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)', explaining that "general methods that leverage computation are ultimately the most effective, and by a large margin."
+The hardware-side advances in compute and data availability within the past ten years have ended the second AI Winter and brought about another round
+of hype surrounding the methods at the beginning of this paragraph, much like expert systems in the 1980s.
