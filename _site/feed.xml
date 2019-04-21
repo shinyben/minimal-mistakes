@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-22T18:38:44-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ben Gardner</title><subtitle>CS student @ MIT.</subtitle><author><name>Ben Gardner</name></author><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/Hello-World/" rel="alternate" type="text/html" title="Hello, World!" /><published>2019-03-19T00:00:00-04:00</published><updated>2019-03-19T00:00:00-04:00</updated><id>http://localhost:4000/Hello-World</id><content type="html" xml:base="http://localhost:4000/Hello-World/">&lt;p&gt;My first blog post! I’ve been ‘blogging’ for personal record-keeping for a while now, but this will be my first public-facing blog.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-21T17:07:58-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ben Gardner</title><subtitle>CS student at MIT</subtitle><author><name>Ben Gardner</name></author><entry><title type="html">History of AI</title><link href="http://localhost:4000/History/" rel="alternate" type="text/html" title="History of AI" /><published>2019-03-22T00:00:00-04:00</published><updated>2019-03-22T00:00:00-04:00</updated><id>http://localhost:4000/History</id><content type="html" xml:base="http://localhost:4000/History/">&lt;p&gt;Artificial Intelligence (AI) had its seminal event in the 1956 at the Dartmouth Summer Research Project on AI.
+John McCarthy, Marvin Minsky, and others came together to brainstorm on how to create machines and programs that would emulate intelligence.
+Symbolic AI was born at this workshop, as well as early Rule-Based Expert Systems.&lt;/p&gt;
+
+&lt;p&gt;There was intense optimism following this workshop. Programs such as the &lt;a href=&quot;https://en.wikipedia.org/wiki/General_Problem_Solver&quot;&gt;General Problem Solver&lt;/a&gt;
+captured the imagination and made prominent researchers make claims such as “In from three to eight years we will have a machine with the general intelligence of an average human being.”&lt;/p&gt;
+
+&lt;p&gt;In the 1970s, after problems in AI proved to be much more difficult than anticipated, the Science Research Council asked
+the mathematician James Lighthill to write a report on the state of the research in AI. The ‘Lighthill Report’, as it came to be known, was highly
+critical of AI, and led to the US and British governments defunding the projects they had supported, leading to an ‘AI Winter.’&lt;/p&gt;
+
+&lt;p&gt;Marvin Minsky and Seymour Papert’s book &lt;em&gt;Perceptrons&lt;/em&gt; also came out in this time period, showing that a seemingly promising area of research,
+Frank Rosenblatt’s early form of a neural network, had more limitations than was previously thought.
+This led to ten-year gap in ‘connectionism’ (artificial neural network) research.&lt;/p&gt;
+
+&lt;p&gt;The AI Winter began to end in the 1980s with the rise of expert systems. AI was finally commercially viable, and was used by the Digital Equipment
+Corporation to save $40m per year. Connectionism also began to rebound with Geoffrey Hinton’s popularizing the backpropagation method for neural
+networks.&lt;/p&gt;
+
+&lt;p&gt;The second AI Winter came about as expert systems began to show their weak points. They were hard to update and maintain, and were vastly overhyped.
+Again, AI underdelivered relative to its promises, and a withdrawal of funds followed.&lt;/p&gt;
+
+&lt;p&gt;In the current paradigm, artificial neural networks (ANNs), generative adversarial networks (GANs), and reinforcement learning (RL) have all benefitted from ‘big data.’
+Rich Sutton recently put out ‘&lt;a href=&quot;http://www.incompleteideas.net/IncIdeas/BitterLesson.html&quot;&gt;The Bitter Lesson&lt;/a&gt;’, explaining that “general methods that leverage computation are ultimately the most effective, and by a large margin.”
+The hardware-side advances in compute and data availability within the past ten years have ended the second AI Winter and brought about another round
+of hype surrounding the methods at the beginning of this paragraph, much like expert systems in the 1980s.&lt;/p&gt;</content><author><name>Ben Gardner</name></author><summary type="html">Artificial Intelligence (AI) had its seminal event in the 1956 at the Dartmouth Summer Research Project on AI. John McCarthy, Marvin Minsky, and others came together to brainstorm on how to create machines and programs that would emulate intelligence. Symbolic AI was born at this workshop, as well as early Rule-Based Expert Systems.</summary></entry><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/Hello-World/" rel="alternate" type="text/html" title="Hello, World!" /><published>2019-03-19T00:00:00-04:00</published><updated>2019-03-19T00:00:00-04:00</updated><id>http://localhost:4000/Hello-World</id><content type="html" xml:base="http://localhost:4000/Hello-World/">&lt;p&gt;My first blog post! I’ve been ‘blogging’ for personal record-keeping for a while now, but this will be my first public-facing blog.&lt;/p&gt;
 
 &lt;p&gt;The push to start comes from this tweet:&lt;/p&gt;
 
@@ -7,4 +32,4 @@
 
 &lt;p&gt;My goal is to work for OpenAI/DeepMind/Google Brain after I finish school, and I’m going to use this blog to hone my skills.&lt;/p&gt;
 
-&lt;p&gt;Let’s see where this takes me!&lt;/p&gt;</content><author><name>Ben Gardner</name></author><category term="first" /><summary type="html">My first blog post! I’ve been ‘blogging’ for personal record-keeping for a while now, but this will be my first public-facing blog.</summary></entry></feed>
+&lt;p&gt;Let’s see where this takes me!&lt;/p&gt;</content><author><name>Ben Gardner</name></author><summary type="html">My first blog post! I’ve been ‘blogging’ for personal record-keeping for a while now, but this will be my first public-facing blog.</summary></entry></feed>
