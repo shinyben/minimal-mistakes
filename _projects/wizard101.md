@@ -2,8 +2,8 @@
 title: "Wizard101 Automation"
 excerpt: "Used browser automation and keyboard interactions to automate gameplay."
 header:
-  image: /assets/img/projects/wizard101/wizard-city.JPG
-  teaser: /assets/img/projects/wizard101/wizard-city.JPG
+  image: /assets/img/projects/wizard101/wizard-city.jpg
+  teaser: /assets/img/projects/wizard101/wizard-city.jpg
 gallery:
   - url: /assets/img/projects/wizard101/grub-guardian.png
     image_path: /assets/img/projects/wizard101/grub-guardian.png

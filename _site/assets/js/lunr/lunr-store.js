@@ -53,4 +53,4 @@ var store = [{
         "excerpt":"I’ve been playing the game Wizard101 since I was around 12, and again hit the same “I don’t have enough time!” problem as I did with the Patience Replacers. To still be able to play and enjoy the game without some of the ‘grinding’ aspects, I made a few programs...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projects/wizard101/",
-        "teaser":"http://localhost:4000/assets/img/projects/wizard101/wizard-city.JPG"}]
+        "teaser":"http://localhost:4000/assets/img/projects/wizard101/wizard-city.jpg"}]
