@@ -28,7 +28,7 @@ var store = [{
         "excerpt":"The final writeup my group made on is on Medium here.  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projects/608/",
-        "teaser":"http://localhost:4000/assets/img/projects/6.08/group.jpg"},{
+        "teaser":"http://localhost:4000/assets/img/projects/6.08/group.JPG"},{
         "title": "Algorithmic Trading",
         "excerpt":"During Spring 2019, I started to get interested in trading stocks and the mechanics surrounding doing so. I started manually trading with Robinhood, but quickly realized that if I wanted to capitalize on weekly changes, I would have to put in a lot of time doing simple and repetitive tasks....","categories": [],
         "tags": [],
