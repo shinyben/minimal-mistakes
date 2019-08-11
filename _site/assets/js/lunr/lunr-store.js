@@ -9,8 +9,23 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/History/",
         "teaser":null},{
+        "title": "Humans vs. AI, Summarized",
+        "excerpt":"One way researchers have measured AI’s progress has been pitting AI against humans in games. Here I’ll be listing the important occurrences along that timeline. 1997 - IBM’s Deep Blue defeats Gary Kasparov, the reigning chess world champion at the time. Deep Blue worked via the alpha-beta search algorithm, an...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Human-AI-Competition/",
+        "teaser":null},{
+        "title": "Reaction to Rich Sutton's Blogpost",
+        "excerpt":"Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled “The Bitter Lesson”. To summarize, “General methods augmented by massive computation are the most effective. Attempts to ‘put’ human knowledge into systems make...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Reaction-to-Sutton/",
+        "teaser":null},{
+        "title": "Reaction to Peter Theil's Article",
+        "excerpt":"Peter Theil, an entrepreneur behind PayPal, Palantir, and Founder’s Fund recently wrote an op-ed for the New York Times entitled “Good for Google, Bad for America” that dealt with AI. His position can be summarized by “AI is inherently a military technology, but Google seems to be sharing its work...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/Reaction-to-Theil/",
+        "teaser":null},{
         "title": "SleepSense: Sleep Tracking",
-        "excerpt":"You will be redirected to the writeup in a few seconds. If you are not, click here.     ","categories": [],
+        "excerpt":"The final writeup my group made on is on Medium here.  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projects/608/",
         "teaser":"http://localhost:4000/assets/img/projects/6.08/group.jpg"},{
@@ -25,7 +40,7 @@ var store = [{
         "url": "http://localhost:4000/projects/athack2018/",
         "teaser":"http://localhost:4000/assets/img/projects/athack/group.JPG"},{
         "title": "Patience Replacers",
-        "excerpt":"First, some backstory. Shiny Pokemon are incredibly rare (1/8192 chance of encounter) color variations on normal Pokemon. If a person continually encounters Pokemon, it would take around 20 hours to find a shiny in most Pokemon games. As I don’t have that kind of time, I decided to automate the...","categories": [],
+        "excerpt":"First, some backstory. Shiny Pokemon are incredibly rare (1/8192 chance of encounter) color variations on normal Pokemon. If a person continually searches for shiny Pokemon, it would take around 20 hours to find one in most Pokemon games. As I don’t have that kind of time, I decided to automate...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projects/patience-replacers/",
         "teaser":"http://localhost:4000/assets/img/projects/patience-replacers/setup.png"},{
@@ -33,4 +48,9 @@ var store = [{
         "excerpt":"I started getting into AI/ML after taking 6.034 at MIT (Introduction to Artificial Intelligence), and decided to create a demo webpage for a possible future AI startup. I used a CNN that I had trained on 50 famous artists as the backend, but aside from that made it with easy...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/projects/whoseart/",
-        "teaser":"http://localhost:4000/assets/img/projects/whoseart/predicted.PNG"}]
+        "teaser":"http://localhost:4000/assets/img/projects/whoseart/predicted.PNG"},{
+        "title": "Wizard101 Automation",
+        "excerpt":"I’ve been playing the game Wizard101 since I was around 12, and again hit the same “I don’t have enough time!” problem as I did with the Patience Replacers. To still be able to play and enjoy the game without some of the ‘grinding’ aspects, I made a few programs...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/wizard101/",
+        "teaser":"http://localhost:4000/assets/img/projects/wizard101/wizard-city.JPG"}]

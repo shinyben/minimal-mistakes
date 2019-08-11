@@ -31,7 +31,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-04-21T17:07:58-04:00">
+  <meta property="article:published_time" content="2019-08-11T16:09:23-04:00">
 
 
 
@@ -184,7 +184,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>First, some backstory. Shiny Pokemon are incredibly rare (1/8192 chance of encounter) color variations on normal Pokemon. If a person continually encounters Pokemon, it would take around 20 hours to find a shiny in most Pokemon games.</p>
+        <p>First, some backstory. Shiny Pokemon are incredibly rare (1/8192 chance of encounter) color variations on normal Pokemon. If a person continually searches for shiny Pokemon, it would take around 20 hours to find one in most Pokemon games.</p>
 
 <p>As I don’t have that kind of time, I decided to automate the process - letting an Arduino program encounter the Pokemon until a shiny was found.</p>
 
@@ -199,16 +199,50 @@
     
   
   
-    <figcaption>The first shiny my program found.
+    <figcaption>The first shiny the mechanical version found.
 </figcaption>
   
 </figure>
 
-<p>I differentiated the shiny and normal Pokemon by the blackout time of the bottom screen - shinies have an extra animation when starting a battle, which lengthens the encounter by a few milliseconds.</p>
+<p>I differentiated between shiny and normal Pokemon by the blackout time of the bottom screen - shinies have an extra animation when starting a battle, which lengthens the bottom screen’s blackout time by a few milliseconds.</p>
 
-<p>My next attempt was digital: I took apart the DS I was working with, wired the Arduino directly to the motherboard, and passed in the 3.3V required to simulate a button press. This was much easier, and much more reliable. The result is visible at the top of the page.</p>
+<p>Wanting to make the system more reliable and less noisy, my next attempt was digital: I took apart the DS I was working with, soldered directly to the motherboard, and passed in the 3.3V required to simulate a button press. This was much easier to work with. The result is visible at the top of the page and below. I also added a counter on a LED screen to keep track of how many encounters it took.</p>
+
+<figure class="half ">
+  
+    
+      <a href="/assets/img/projects/patience-replacers/budew.jpg">
+        <img src="/assets/img/projects/patience-replacers/budew.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/img/projects/patience-replacers/shiny-budew.jpg">
+        <img src="/assets/img/projects/patience-replacers/shiny-budew.jpg" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>A budew found by the soldered version.
+</figcaption>
+  
+</figure>
 
 <p>Overall, I’ve built a few programs to handle different games and encounter types, and used the same method to modify a 2DS as well.</p>
+
+<figure class=" ">
+  
+    
+      <a href="/assets/img/projects/patience-replacers/shiny-livingdex.PNG">
+        <img src="/assets/img/projects/patience-replacers/shiny-livingdex.PNG" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>The current status of my shiny LivingDex.
+</figcaption>
+  
+</figure>
 
         
       </section>
