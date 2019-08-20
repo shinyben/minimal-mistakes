@@ -14,43 +14,53 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/Human-AI-Competition/",
         "teaser":null},{
-        "title": "Reaction to Rich Sutton's Blogpost",
+        "title": "Summary of Sutton's The Bitter Lesson",
         "excerpt":"Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled “The Bitter Lesson”. To summarize, “General methods augmented by massive computation are the most effective. Attempts to ‘put’ human knowledge into systems make...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/Reaction-to-Sutton/",
+        "url": "http://localhost:4000/Bitter-Lesson/",
         "teaser":null},{
-        "title": "Reaction to Peter Theil's Article",
+        "title": "Is AI Inherently Militaristic? ",
         "excerpt":"Peter Theil, an entrepreneur behind PayPal, Palantir, and Founder’s Fund recently wrote an op-ed for the New York Times entitled “Good for Google, Bad for America” that dealt with AI. His position can be summarized by “AI is inherently a military technology, but Google seems to be sharing its work...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/Reaction-to-Theil/",
+        "url": "http://localhost:4000/AI-Inherently-Militaristic/",
         "teaser":null},{
-        "title": "SleepSense: Sleep Tracking",
-        "excerpt":"The final writeup my group made on is on Medium here.  ","categories": [],
+        "title": "Image Classification with FastAI",
+        "excerpt":"After learning the history and the building blocks of GOFAI in 6.034, I decided to see what the state of the art was. After looking around, going through a of Andrew Ng’s Coursera videos, Geoff Hinton’s videos, and eventually looking to Twitter, I found fast.ai. FastAI has a MOOC called...","categories": [],
+        "tags": ["fastai"],
+        "url": "http://localhost:4000/Image-Classification/",
+        "teaser":null},{
+        "title": "Wizard101 Automation",
+        "excerpt":"I’ve been playing the game Wizard101 since I was around 12, and again hit the same “I don’t have enough time!” problem as I did with the Patience Replacers. To still be able to play and enjoy the game without some of the ‘grinding’ aspects, I made a few programs...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/projects/608/",
-        "teaser":"http://localhost:4000/assets/img/projects/6.08/group.JPG"},{
+        "url": "http://localhost:4000/projects/93-wizard101/",
+        "teaser":"http://localhost:4000/assets/img/projects/wizard101/wizard-city.jpg"},{
+        "title": "WhoseArt: Demo AI Startup",
+        "excerpt":"I started getting into AI/ML after taking 6.034 at MIT (Introduction to Artificial Intelligence), and decided to create a demo webpage for a possible future AI startup. I used a CNN that I had trained on 50 famous artists as the backend, but aside from that made it with easy...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/94-whoseart/",
+        "teaser":"http://localhost:4000/assets/img/projects/whoseart/predicted.PNG"},{
         "title": "Algorithmic Trading",
         "excerpt":"During Spring 2019, I started to get interested in trading stocks and the mechanics surrounding doing so. I started manually trading with Robinhood, but quickly realized that if I wanted to capitalize on weekly changes, I would have to put in a lot of time doing simple and repetitive tasks....","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/projects/alpaca/",
+        "url": "http://localhost:4000/projects/96-alpaca/",
         "teaser":"http://localhost:4000/assets/img/projects/alpaca/backtest.PNG"},{
         "title": "ATHack 2018",
         "excerpt":"The project started with a dinner to meet the co-designers - the people ATHack (Assisitive Technology Hack) was designed around. After going around to the tables, introducing myself, and listening to the different requests, the problem I was most excited about solving was Anette’s. Anette had an interesting request: because...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/projects/athack2018/",
+        "url": "http://localhost:4000/projects/97-athack2018/",
         "teaser":"http://localhost:4000/assets/img/projects/athack/group.JPG"},{
+        "title": "SleepSense: Sleep Tracking",
+        "excerpt":"The final writeup my group made on is on Medium here.  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/98-608/",
+        "teaser":"http://localhost:4000/assets/img/projects/6.08/group.JPG"},{
         "title": "Patience Replacers",
         "excerpt":"First, some backstory. Shiny Pokemon are incredibly rare (1/8192 chance of encounter) color variations on normal Pokemon. If a person continually searches for shiny Pokemon, it would take around 20 hours to find one in most Pokemon games. As I don’t have that kind of time, I decided to automate...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/projects/patience-replacers/",
+        "url": "http://localhost:4000/projects/99-patience-replacers/",
         "teaser":"http://localhost:4000/assets/img/projects/patience-replacers/setup.png"},{
-        "title": "WhoseArt: Demo AI Startup",
-        "excerpt":"I started getting into AI/ML after taking 6.034 at MIT (Introduction to Artificial Intelligence), and decided to create a demo webpage for a possible future AI startup. I used a CNN that I had trained on 50 famous artists as the backend, but aside from that made it with easy...","categories": [],
+        "title": "Java Animations",
+        "excerpt":"Right before taking AP Computer Science in high school, I decided to do a little project (this would be my first, aside from the little Java games I had made from the Programming Videos Games for the Evil Genius book I had gotten). I wanted to make my own little...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/projects/whoseart/",
-        "teaser":"http://localhost:4000/assets/img/projects/whoseart/predicted.PNG"},{
-        "title": "Wizard101 Automation",
-        "excerpt":"I’ve been playing the game Wizard101 since I was around 12, and again hit the same “I don’t have enough time!” problem as I did with the Patience Replacers. To still be able to play and enjoy the game without some of the ‘grinding’ aspects, I made a few programs...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/projects/wizard101/",
-        "teaser":"http://localhost:4000/assets/img/projects/wizard101/wizard-city.jpg"}]
+        "url": "http://localhost:4000/projects/999-animations/",
+        "teaser":"http://localhost:4000/assets/img/projects/animations/Circler.gif"}]

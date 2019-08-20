@@ -1,0 +1,20 @@
+---
+title: "ATHack 2018"
+excerpt: "Built and augmented a vibrating bracelet to alert a deaf woman of doorbell rings."
+header:
+  image: /assets/img/projects/athack/group.JPG
+  teaser: /assets/img/projects/athack/group.JPG
+gallery:
+  - url: /assets/img/projects/athack/PCB-design.JPG
+    image_path: /assets/img/projects/athack/PCB-design.JPG
+  - url: /assets/img/projects/athack/PCB.JPG
+    image_path: /assets/img/projects/athack/PCB.JPG
+---
+
+The project started with a dinner to meet the co-designers - the people ATHack (Assisitive Technology Hack) was designed around. After going around to the tables, introducing myself, and listening to the different requests, the problem I was most excited about solving was Anette's.
+
+Anette had an interesting request: because she was deaf, she couldn't hear the doorbell when guests came to her house, and would like to change that. Our solution was a vibrating bracelet connected to Anette's home doorbell system.
+
+{% include gallery caption="This is the PCB design and final product." %}
+
+It was interesting to get experience with PCB fabrication, laser cutting, 3D printing, and textiles, though. The grad students with whom I was working showed me around the technical side of things, and I came away from the project having learned a lot.

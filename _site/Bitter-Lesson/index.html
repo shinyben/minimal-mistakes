@@ -1,0 +1,362 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Summary of Sutton’s The Bitter Lesson - Ben Gardner</title>
+<meta name="description" content="Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled “The Bitter Lesson”. To summarize, “General methods augmented by massive computation are the most effective. Attempts to ‘put’ human knowledge into systems make the systems plateau and ultimately fail.”">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Ben Gardner">
+<meta property="og:title" content="Summary of Sutton’s The Bitter Lesson">
+<meta property="og:url" content="http://localhost:4000/Bitter-Lesson/">
+
+
+  <meta property="og:description" content="Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled “The Bitter Lesson”. To summarize, “General methods augmented by massive computation are the most effective. Attempts to ‘put’ human knowledge into systems make the systems plateau and ultimately fail.”">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-04-20T00:00:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/Bitter-Lesson/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ben Gardner",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ben Gardner Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Ben Gardner</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Summary of Sutton's The Bitter Lesson</h1>
+    
+    <p>Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">“The Bitter Lesson”</a>. To summarize, “General methods augmented by massive computation are the most effective. Attempts to ‘put’ human knowledge into systems make the systems plateau and ultimately fail.”</p>
+
+<p>First, the post summarizes progress made in the games Go and chess, and then speech recognition, deep learning, and computer vision. Sutton points out that, in all cases, statistical methods that utilize massive computation have won out over the efforts that attempt to make the computer ‘think the way humans think’ and plug in human heuristics.</p>
+
+<p>It’s a rather short blogpost, and I would recommend reading it yourself, but I’ve pulled out several quotes that I think summarize its feel rather nicely:</p>
+
+<blockquote>The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin.</blockquote>
+
+<blockquote>Search and learning are the two most important classes of techniques for utilizing massive amounts of computation in AI research.</blockquote>
+
+<blockquote>Again, the statistical methods won out over the human-knowledge-based methods. This led to a major change in all of natural language processing, gradually over decades, where statistics and computation came to dominate the field.</blockquote>
+
+<blockquote>As in the games (chess and Go), researchers always tried to make systems that worked the way the researchers thought their own minds worked---they tried to put that knowledge in their systems---but it proved ultimately counterproductive, and a colossal waste of researcher's time, when, through Moore's law, massive computation became available and a means was found to put it to good use.</blockquote>
+
+<blockquote>The second general point to be learned from the bitter lesson is that the actual contents of minds are tremendously, irredeemably complex; we should stop trying to find simple ways to think about the contents of minds, such as simple ways to think about space, objects, multiple agents, or symmetries.</blockquote>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">6</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/Image-Classification/" rel="permalink">Image Classification with FastAI
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">After learning the history and the building blocks of GOFAI in 6.034, I decided to see what the state of the art was. After looking around, going through a o...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/AI-Inherently-Militaristic/" rel="permalink">Is AI Inherently Militaristic?
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Peter Theil, an entrepreneur behind PayPal, Palantir, and Founder’s Fund recently wrote an op-ed for the New York Times entitled “Good for Google, Bad for Am...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/Bitter-Lesson/" rel="permalink">Summary of Sutton’s The Bitter Lesson
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Rich Sutton, a professor of Reinforcement Learning (RL) at the University of Alberta and the guy who wrote the book on RL, recently wrote a blogpost entitled...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/Human-AI-Competition/" rel="permalink">Humans vs. AI, Summarized
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">One way researchers have measured AI’s progress has been pitting AI against humans in games. Here I’ll be listing the important occurrences along that timeli...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/History/" rel="permalink">History of AI
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Artificial Intelligence (AI) had its seminal event in the 1956 at the Dartmouth Summer Research Project on AI.
+John McCarthy, Marvin Minsky, and others came ...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/Hello-World/" rel="permalink">Hello, World!
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">My first blog post! I’ve been ‘blogging’ for personal record-keeping for a while now, but this will be my first public-facing blog.
+
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Ben Gardner. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
