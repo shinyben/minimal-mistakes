@@ -2,7 +2,6 @@
 title: "Patience Replacers"
 excerpt: "Designed and built a system to find and capture shiny Pokemon."
 header:
-  image: /assets/img/projects/patience-replacers/setup.png
   teaser: /assets/img/projects/patience-replacers/setup.png
 gallery:
   - url: /assets/img/projects/patience-replacers/tepig.JPG

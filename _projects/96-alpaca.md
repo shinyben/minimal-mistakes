@@ -2,7 +2,6 @@
 title: "Algorithmic Trading"
 excerpt: "Built, tested, and ran an algorithmic trading setup using Quantopian and Alpaca."
 header:
-  image: /assets/img/projects/alpaca/backtest.PNG
   teaser: /assets/img/projects/alpaca/backtest.PNG
 gallery:
   - url: /assets/img/projects/alpaca/alpaca.PNG

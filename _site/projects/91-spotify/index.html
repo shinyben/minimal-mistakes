@@ -9,23 +9,23 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>ATHack 2018 - Ben Gardner</title>
-<meta name="description" content="Built and augmented a vibrating bracelet to alert a deaf woman of doorbell rings.">
+<!-- begin _includes/seo.html --><title>Spotify Playlist Generation - Ben Gardner</title>
+<meta name="description" content="Given a list of track/artist pairings, creates and populates a Spotify playlist.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Ben Gardner">
-<meta property="og:title" content="ATHack 2018">
-<meta property="og:url" content="http://localhost:4000/projects/97-athack2018/">
+<meta property="og:title" content="Spotify Playlist Generation">
+<meta property="og:url" content="http://localhost:4000/projects/91-spotify/">
 
 
-  <meta property="og:description" content="Built and augmented a vibrating bracelet to alert a deaf woman of doorbell rings.">
+  <meta property="og:description" content="Given a list of track/artist pairings, creates and populates a Spotify playlist.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/img/projects/athack/group.JPG">
+  <meta property="og:image" content="http://localhost:4000/assets/img/projects/spotify/code.png">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/97-athack2018/">
+<link rel="canonical" href="http://localhost:4000/projects/91-spotify/">
 
 
 
@@ -148,15 +148,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="ATHack 2018">
-    <meta itemprop="description" content="Built and augmented a vibrating bracelet to alert a deaf woman of doorbell rings.">
+    <meta itemprop="headline" content="Spotify Playlist Generation">
+    <meta itemprop="description" content="Given a list of track/artist pairings, creates and populates a Spotify playlist.">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">ATHack 2018
+          <h1 id="page-title" class="page__title" itemprop="headline">Spotify Playlist Generation
 </h1>
           
         </header>
@@ -164,31 +164,11 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>The project started with a dinner to meet the co-designers - the people ATHack (Assisitive Technology Hack) was designed around. After going around to the tables, introducing myself, and listening to the different requests, the problem I was most excited about solving was Anette’s.</p>
+        <p>A small project using Golang.</p>
 
-<p>Anette had an interesting request: because she was deaf, she couldn’t hear the doorbell when guests came to her house, and would like to change that. Our solution was a vibrating bracelet connected to Anette’s home doorbell system.</p>
+<p>This can be described pretty quickly, and it only took me a day: I used the Spotify API to match the tracks in the playlists from <a href="track-blaster.com">track blaster</a> to Spotify track elements, and then populated a new Spotify playlist with those tracks if they existed.</p>
 
-<figure class="half ">
-  
-    
-      <a href="/assets/img/projects/athack/PCB-design.JPG">
-        <img src="/assets/img/projects/athack/PCB-design.JPG" alt="" />
-      </a>
-    
-  
-    
-      <a href="/assets/img/projects/athack/PCB.JPG">
-        <img src="/assets/img/projects/athack/PCB.JPG" alt="" />
-      </a>
-    
-  
-  
-    <figcaption>This is the PCB design and final product.
-</figcaption>
-  
-</figure>
-
-<p>It was interesting to get experience with PCB fabrication, laser cutting, 3D printing, and textiles, though. The grad students with whom I was working showed me around the technical side of things, and I came away from the project having learned a lot.</p>
+<p>I’m hoping to augment my college’s radio station, WMBR, with a program that makes playlists from the tracks they play. Another fun application that I could make by just reversing the process is taking a Spotify playlist and turning it into a track-blaster playlist so DJs don’t have to do the rather mindless task of data entry.</p>
 
         
       </section>
@@ -206,22 +186,22 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=ATHack+2018%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F97-athack2018%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Spotify+Playlist+Generation%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F91-spotify%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F97-athack2018%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F91-spotify%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F97-athack2018%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F91-spotify%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
  -->
 
       
   <nav class="pagination">
     
-      <a href="/projects/96-alpaca/" class="pagination--pager" title="Algorithmic Trading
+      <a href="/projects/90-radblock/" class="pagination--pager" title="RadBlock: The First AI AM/FM Ad-Blocker
 ">Previous</a>
     
     
-      <a href="/projects/98-608/" class="pagination--pager" title="SleepSense: Sleep Tracking
+      <a href="/projects/92-autovid/" class="pagination--pager" title="AutoVid: Autocompiling YouTube Videos
 ">Next</a>
     
   </nav>

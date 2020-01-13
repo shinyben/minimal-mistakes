@@ -1,0 +1,282 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>AutoVid: Autocompiling YouTube Videos - Ben Gardner</title>
+<meta name="description" content="Used browser automation and FFMPEG in combination to create an automatic YouTube upload pipeline.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Ben Gardner">
+<meta property="og:title" content="AutoVid: Autocompiling YouTube Videos">
+<meta property="og:url" content="http://localhost:4000/projects/92-autovid/">
+
+
+  <meta property="og:description" content="Used browser automation and FFMPEG in combination to create an automatic YouTube upload pipeline.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/projects/autovid/channel.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-01-12T20:16:04-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/projects/92-autovid/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ben Gardner",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ben Gardner Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Ben Gardner</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="AutoVid: Autocompiling YouTube Videos">
+    <meta itemprop="description" content="Used browser automation and FFMPEG in combination to create an automatic YouTube upload pipeline.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">AutoVid: Autocompiling YouTube Videos
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This was a large multi-thousand-line project I did in the summer of 2019. My goal was to create a pipeline such that I could leave a server running that would create YouTube videos on its own and upload them to YouTube, accruing views without my having to do any work. An example of the Reddit pipeline is <a href="https://www.youtube.com/watch?v=M48NftKUFS4">here</a>, and the TikTok pipeline <a href="https://www.youtube.com/watch?v=ag5_ESjyInM">here</a>.</p>
+
+<p>The first attempt was a text-to-speech (TTS) Reddit post reader. There were a few different aspects of this pipeline: finding the post, extracting the pictures and text, creating the video, and uploading the video.</p>
+
+<p>First, Selenium, a web automation library, would be used to pull up the webpage that contained the list of popular Reddit posts that had been created on a particular day.</p>
+
+<p>Next, those posts and their comments would be explored, again using the DOM to interact with the website to filter popular posts, screenshot them, and compile their text. Once I had a picture of the original post and the popular comments, as well as their text, I could create the video.</p>
+
+<p>To create the video, I made a standard format. First, the original question asked, such as “What’s an invention that’s still around today but has lost sight of its original purpose?” would be shown, and then its most popular comments, such as “Electric Pen by Edison are now tattoo machines.” These would have TTS and fun background music broadcast over them. The screenshots would be combined via FFMPEG into a sort of slideshow, and they would stay on the screen for as long as the TTS was still vocalizing the comment’s text. I also had to create a thumbnail image programmatically, which I did with the PIL library.</p>
+
+<p>Uploading the video consists of logging into a YouTube account and navigating the uploading process, from selecting a file to specifying a title and description. This was all done programmatically as well.</p>
+
+<p>I used AWS to automate the process, making the software compatible with Windows, Linux, and MacOS. After completion of the project, I found out that a GitHub repo had been opened during the time that I was coding that did the exact same thing as us, but professionally: with a better TTS client and a neat sentence-by-sentence revealing mode on each comment. We made their code compatible with Linux and transitioned to using it exclusively.</p>
+
+<p>The next project, the automated TikTok videos, had the same process for uploading, but the body of the video was different. We navigated to TikTok.com, found the most popular videos of the day, and downloaded them. We also used a VPN (which I interacted with via the DOM, a hard problem) to find the most popular videos in India and around 10 other countries. We then concatenated those videos to create a 10-minute video, which was then uploaded to YouTube.</p>
+
+<p>In summary, I created an auto-uploading pipeline for both Reddit and TikTok videos, and let it run automatically for a short while. This project utilized Python, Selenium, FFMPEG, and TTS systems.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      <!-- <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=AutoVid%3A+Autocompiling+YouTube+Videos%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F92-autovid%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F92-autovid%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F92-autovid%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ -->
+
+      
+  <nav class="pagination">
+    
+      <a href="/projects/91-spotify/" class="pagination--pager" title="Spotify Playlist Generation
+">Previous</a>
+    
+    
+      <a href="/projects/93-wizard101/" class="pagination--pager" title="Wizard101 Automation
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Ben Gardner. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

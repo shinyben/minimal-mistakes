@@ -1,0 +1,275 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>RadBlock: The First AI AM/FM Ad-Blocker - Ben Gardner</title>
+<meta name="description" content="Used machine learning to discern between radio ads and songs.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Ben Gardner">
+<meta property="og:title" content="RadBlock: The First AI AM/FM Ad-Blocker">
+<meta property="og:url" content="http://localhost:4000/projects/90-radblock/">
+
+
+  <meta property="og:description" content="Used machine learning to discern between radio ads and songs.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/projects/radblock/website.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-01-12T20:16:04-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/projects/90-radblock/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ben Gardner",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Ben Gardner Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Ben Gardner</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="RadBlock: The First AI AM/FM Ad-Blocker">
+    <meta itemprop="description" content="Used machine learning to discern between radio ads and songs.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">RadBlock: The First AI AM/FM Ad-Blocker
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>My largest project yet. There are quite a few components to this one: collection/storage/cleaning of radio data, the model itself, the database of stations and their respective statuses, the front-end website <a href="http://radio-search.com/">here</a>. I’m not going to go into much detail in this description because I would like to be able to capitalize on the idea, but I will give a general sense of what I did.</p>
+
+<p>First, the database. I found a few disparate databases around the web, including the FCC database, and compiled them into a central CSV that I used to populate a MongoDB instance. I have pipelines that I can run to automatically this central CSV from new FCC and other data daily as well.</p>
+
+<p>Once I had the database, I built the website around it. It allows for State/Station lookup, and while it doesn’t have much database information publicly-facing (I still have to find a way to limit the amount of requests one IP address can make per day so I don’t get all my data scraped), it gives the gist, what you can find on the FCC website. I also have a live indicator for around 700 stations - whether they’re currently playing ads or not.</p>
+
+<p>As for the model: I will say that it’s transitioned past the copy-and-paste basic model stage. Even that was decent, though: 98+% intra-station accuracy on country, the most prevalent radio genre, and ~90% accuracy transferring between genres, classifying on relatively short frequency blocks. I had to manually label 20+ hours of audio data using Audacity, and create a pipeline to split the .wav files I had into ads and not ads.</p>
+
+<p>I also populated the database with direct livestream links, which allows me to use AWS to run inference on those stations’ livestreams and update Mongo with the result. This is hard because there’s no central spot where all livestream links are stored, which forced me to use a lot of browser automation (interacting with the DOM) and messing with HTTP requests to programmatically find the stream locations. I have around 25% total coverage of all internet radio stations right now (~3k stations all together), and will need to manually find most of the other links on my own.</p>
+
+<p>I think this will be useful for stereo companies with internet connection enabled boxes (say like Tesla). They will be able to deny advertisers’ access to their customers. Therefore stereo manufacturers could sell a premium ad-free radio experience or sell access to their user base to stations or advertisers. Radio ads are a $18b market in the US, and I’m hoping that this tech can make a significant splash.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      <!-- <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=RadBlock%3A+The+First+AI+AM%2FFM+Ad-Blocker%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F90-radblock%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F90-radblock%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2F90-radblock%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+ -->
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/projects/91-spotify/" class="pagination--pager" title="Spotify Playlist Generation
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Ben Gardner. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

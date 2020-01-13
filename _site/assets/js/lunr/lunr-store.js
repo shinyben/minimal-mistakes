@@ -29,6 +29,21 @@ var store = [{
         "tags": ["fastai"],
         "url": "http://localhost:4000/Image-Classification/",
         "teaser":null},{
+        "title": "RadBlock: The First AI AM/FM Ad-Blocker",
+        "excerpt":"My largest project yet. There are quite a few components to this one: collection/storage/cleaning of radio data, the model itself, the database of stations and their respective statuses, the front-end website here. I’m not going to go into much detail in this description because I would like to be able...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/90-radblock/",
+        "teaser":"http://localhost:4000/assets/img/projects/radblock/website.png"},{
+        "title": "Spotify Playlist Generation",
+        "excerpt":"A small project using Golang. This can be described pretty quickly, and it only took me a day: I used the Spotify API to match the tracks in the playlists from track blaster to Spotify track elements, and then populated a new Spotify playlist with those tracks if they existed....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/91-spotify/",
+        "teaser":"http://localhost:4000/assets/img/projects/spotify/code.png"},{
+        "title": "AutoVid: Autocompiling YouTube Videos",
+        "excerpt":"This was a large multi-thousand-line project I did in the summer of 2019. My goal was to create a pipeline such that I could leave a server running that would create YouTube videos on its own and upload them to YouTube, accruing views without my having to do any work....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/92-autovid/",
+        "teaser":"http://localhost:4000/assets/img/projects/autovid/channel.png"},{
         "title": "Wizard101 Automation",
         "excerpt":"I’ve been playing the game Wizard101 since I was around 12, and again hit the same “I don’t have enough time!” problem as I did with the Patience Replacers. To still be able to play and enjoy the game without some of the ‘grinding’ aspects, I made a few programs...","categories": [],
         "tags": [],

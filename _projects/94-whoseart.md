@@ -2,7 +2,6 @@
 title: "WhoseArt: Demo AI Startup"
 excerpt: "Created a CNN & webapp to identify 50 popular artists' works."
 header:
-  image: /assets/img/projects/whoseart/predicted.PNG
   teaser: /assets/img/projects/whoseart/predicted.PNG
 gallery:
   - url: /assets/img/projects/whoseart/predict.PNG
