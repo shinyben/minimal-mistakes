@@ -29,6 +29,11 @@ var store = [{
         "tags": ["fastai"],
         "url": "http://localhost:4000/Image-Classification/",
         "teaser":null},{
+        "title": "ATHack 2020",
+        "excerpt":"Inspiration Coming from a musical family, Eli wants to be able to play ukulele with his young daughter. He does not have full mobility in his left side, so he needs to be able to play with only his right hand. We designed an automatic strummer attachment with Eli that...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/projects/89-athack2020/",
+        "teaser":"http://localhost:4000/assets/img/projects/athack2020/main.jpg"},{
         "title": "RadBlock: The First AI AM/FM Ad-Blocker",
         "excerpt":"My largest project yet. There are quite a few components to this one: collection/storage/cleaning of radio data, the model itself, the database of stations and their respective statuses, the front-end website here. I’m not going to go into much detail in this description because I would like to be able...","categories": [],
         "tags": [],
